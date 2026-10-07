@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    margin: 0;
+    color: #d4af37;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin: 10px 0 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.hero a {
+    margin-top: 25px;
+    padding: 15px 30px;
+    background-color: #d4af37;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.hero a:hover {
+    background-color: #f0d060;
+}
+.servicos {
+    padding: 80px 20px;
+    background-color: #1a1a1a;
+}
+
+.servicos h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #d4af37;
+}
+
+.cartoes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cartao {
+    flex: 1;
+    padding: 35px 25px;
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.cartao h3 {
+    font-size: 23px;
+    margin-top: 0;
+}
+
+.cartao p {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.cartao strong {
+    display: block;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #d4af37;
+}
+.contacto {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #111;
+}
+
+.contacto h2 {
+    font-size: 36px;
+    color: #d4af37;
+}
+
+.contacto p {
+    max-width: 600px;
+    margin: 20px auto;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.contacto a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #d4af37;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.contacto a:hover {
+    background-color: #f0d060;
+}
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .cartoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cartao {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .servicos h2,
+    .contacto h2 {
+        font-size: 30px;
+    }
+
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 40px;
+
+    background-color: #111;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #d4af37;
+}
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+}
